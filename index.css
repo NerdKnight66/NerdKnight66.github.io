@@ -2,23 +2,20 @@ body {
     background-color: hsl(218, 24%, 9%);
     color: rgb(214, 104, 83);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: xx-large;
     font-weight: bold;
 }
 
 #Header {
-    height: auto;
-    width: 100vw;
+    text-align: center;
+    margin-top: 10vh;
+    font-size: 48px;
+    -webkit-text-stroke: 1px;
 }
 
-#Main {
-    height: 50vh;
-    width: 100vw;
-}
-
-#Footer {
-    height: 10vh;
-    width: 100vw;
+#MainContent {
+    margin: 5%;
+    font-size: 28px;
+    color: lavender;
 }
 
 Button {
@@ -30,12 +27,20 @@ Button {
     font-weight: bold;
     font-size: xx-large;
     border-radius: 10px;
+    outline: 10px;
+    outline-color: rgb(214, 104, 83);
 }
 
 button:active {
     background-color: rgb(33, 45, 64);
 }
 
-#DateButton {
-    font-size: large;
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.item {
+    margin-left: 10px;
+    margin-right: 10px;
 }
