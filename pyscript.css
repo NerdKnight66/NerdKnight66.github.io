@@ -27,7 +27,6 @@ body{
     padding: .4em;
   }
   .icon{
-    display: inline-block;
     margin-right: .3em;
     float: left;
     width: .75em;
