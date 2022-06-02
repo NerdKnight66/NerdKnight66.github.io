@@ -19,13 +19,13 @@ body {
 }
 
 Button {
-    height: 70px;
     width: 140px;
     color: rgb(214, 104, 83);
     background-color: rgb(54, 65, 86);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
-    font-size: xx-large;
+    font-size: 16px;
+    font-size: 2vw;
     border-radius: 10px;
     outline: 10px;
     outline-color: rgb(214, 104, 83);
@@ -43,4 +43,5 @@ button:active {
 .item {
     margin-left: 10px;
     margin-right: 10px;
+    width: 140px;
 }
