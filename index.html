@@ -1,20 +1,15 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="checkpoint.css">
-        <meta content="Internet checkpoint" property="og:title" />
-        <meta content="Stop by for a while and save your game" property="og:description" />
-        <meta content="https://iamame.me" property="og:url" />
-        <meta content="https://iamame.me/embed.png" property="og:image" />
-        <meta content="#8491b9" data-react-helmet="true" name="theme-color" />
-        <meta name="twitter:card" content="summary_large_image">
-    </head>
-    <body>
-        <audio preload="auto" loop autoplay>
-            <source src="song.mp3" type="audio/mp3">
-        </audio>
-        <div class="scrolling-image-container">
-            <div class="scrolling-image"><div class="static-image"></div></div>
-        </div>
-    </body>
+<head>
+	<title>Relaxing Video</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="background">
+		<div class="scrolling-image" id="scrolling-image"><div class="playpause"><div class="button"></div></div></div>
+	</div>
+	<audio id="audio" src="song.mp3" autoplay loop></audio>
+
+	<script src="script.js"></script>
+</body>
 </html>
