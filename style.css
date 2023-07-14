@@ -1,4 +1,51 @@
 body {
-    padding: 10px;
-    margin: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+.background {
+    background-image: url("Sky.png");
+    background-size: 25%;
+    height: 100vh;
+    position: relative;
+    background-repeat: repeat;
+}
+
+.scrolling-image {
+    background-image: url("Vines.png");
+    background-size: 25%;
+    background-repeat: repeat;
+    background-position: 0px 0px; /* change this value to control scrolling direction and speed */
+    height: 100vh; /* this should be at least twice the height of the viewport */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw; /* this should be at least twice the width of the viewport */
+}
+
+.playpause {
+    width: 20px;
+    height: 20px;
+    padding: 20px;
+    border-radius: 50%;
+    background: transparent;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+  
+.playpause:hover {
+    background: #464646AA;
+ }
+  
+.playpause .button {
+    width: 20px;
+    height: 20px;
+    position: center;
+    background: #f0f0f0;
+    transition: inherit;
+    clip-path: polygon(0 0, 40% 0, 40% 100%, 60% 100%, 60% 0, 100% 0, 100% 100%, 0 100%);
+}
+  
+.playpause.paused .button {
+    clip-path: polygon(0 0, 50% 25%, 50% 75%, 50% 75%, 50% 25%, 100% 50%, 100% 50%, 0 100%);
 }
